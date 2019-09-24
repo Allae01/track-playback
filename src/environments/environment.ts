@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  serAPI: 'https://api.serpwow.com/live/search?api_key=API&q=Topic&search_type=images&page=1&num=10',
+  APIKey: 'F61E7CAFEFD14A1A9BD24E85F6DE3D71',
   production: false
 };
 
