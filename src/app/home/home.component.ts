@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
       this.msbapAudioUrl = reader.result;
     };
     this.isTrack1 = true;
-    // this.getImage(event.target.files[0].name.split('.')[0], 1);
+    this.getImage(event.target.files[0].name.split('.')[0], 1);
   }
 
   isPlaying() {
@@ -92,7 +92,7 @@ export class HomeComponent implements OnInit {
       this.msbapAudioUrl2 = reader.result;
     };
     this.isTrack2 = true;
-    // this.getImage(event.target.files[0].name.split('.')[0], 2);
+    this.getImage(event.target.files[0].name.split('.')[0], 2);
   }
 
   checkIfTwoDisks() {
