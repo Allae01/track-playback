@@ -105,10 +105,12 @@ export class HomeComponent implements OnInit {
   }
 
   playBoth() {
+    return new Promise((resolve, reject) => {
       this.playback2.player.nativeElement.play();
       this.playback1.player.nativeElement.play();
       this.inTrack = true;
       this.inPause = false;
+    });
   }
 
 
@@ -173,10 +175,12 @@ export class HomeComponent implements OnInit {
   }
 
   pauseBoth() {
-    this.playback2.player.nativeElement.pause();
-    this.playback1.player.nativeElement.pause();
-    this.inPause = true;
-    this.inTrack = false;
+    return new Promise((resolve, reject) => {
+      this.playback2.player.nativeElement.pause();
+      this.playback1.player.nativeElement.pause();
+      this.inPause = true;
+      this.inTrack = false;
+    });
   }
 
   isPaused() {
